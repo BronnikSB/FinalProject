@@ -9,5 +9,5 @@ def test_guest_can_add_product_to_basket(browser):
     page.open()
     page.add_product_to_basket()
     page.solve_quiz_and_get_code()
-    time.sleep(10)
+    time.sleep(3)
     page.check_add_name()

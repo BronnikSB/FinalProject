@@ -22,6 +22,7 @@ class ProductPageLocators():
 
     LINK_PRODUCT = 'http://selenium1py.pythonanywhere.com/catalogue/the-shellcoders-handbook_209/?promo=newYear'
     ADD_PRODUCT = (By.CSS_SELECTOR, '[value="Add to basket"]')
-    PRODUCT_NAME = (By.CSS_SELECTOR, '.product_main h1')
+    PRODUCT_NAME_AND_PRICE = (By.CSS_SELECTOR, '.alertinner strong')
+
 
 
