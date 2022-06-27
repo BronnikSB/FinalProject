@@ -27,6 +27,7 @@ class BasePage():
     def should_be_text(actual_text, expected_text):
         try:
             actual_text = actual_text.text
+            expected_text = expected_text.text
             assert actual_text == expected_text
         except AssertionError:
             raise print(f'Локатор {expected_text} не найден')
