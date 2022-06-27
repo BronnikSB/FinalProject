@@ -11,7 +11,7 @@ class ProductPage(BasePage):
     def check_add_name(self):
         product_name_and_price = self.browser.find_elements(*ProductPageLocators.PRODUCT_NAME_AND_PRICE)
         self.should_be_text(product_name_and_price[0], "The shellcoder's handbook")
-        self.should_be_text(product_name_and_price[2], "£9.99")
+        self.should_be_text(product_name_and_price[2], "£9.9")
 
 
 

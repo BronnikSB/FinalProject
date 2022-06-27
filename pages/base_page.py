@@ -25,8 +25,12 @@ class BasePage():
 
     @staticmethod
     def should_be_text(actual_text, expected_text):
-        actual_text = actual_text.text
-        assert actual_text == expected_text
+        try:
+            actual_text = actual_text.text
+            assert actual_text == expected_text
+        except AssertionError:
+            raise print(f'Локатор {expected_text} не найден')
+        return True
 
     def solve_quiz_and_get_code(self):
         alert = self.browser.switch_to.alert
